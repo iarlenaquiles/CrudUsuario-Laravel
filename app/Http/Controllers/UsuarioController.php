@@ -84,6 +84,6 @@ class UsuarioController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Usuario::find($id)->delete();
     }
 }
