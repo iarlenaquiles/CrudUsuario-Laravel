@@ -71,7 +71,9 @@ class UsuarioController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        Usuario::find($id)->update($request->all());
+
+        return $request->all();
     }
 
     /**
