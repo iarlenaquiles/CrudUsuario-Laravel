@@ -22,3 +22,11 @@ Route::post('usuario/', 'UsuarioController@create');
 Route::put('usuario/{id}', 'UsuarioController@update');
 
 Route::delete('usuario/{id}', 'UsuarioController@destroy');
+
+Route::get('perfil/', 'PerfilController@index');
+
+Route::post('perfil/', 'PerfilController@create');
+
+Route::put('perfil/{id}', 'PerfilController@update');
+
+Route::delete('perfil/{id}', 'PerfilController@destroy');
