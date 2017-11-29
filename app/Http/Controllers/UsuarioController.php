@@ -26,7 +26,7 @@ class UsuarioController extends Controller
     public function create(Request $req)
     {
         Usuario::create($req->all());
-        return $req->all();
+        return Usuario::orderBy('create_at','desc')->first();
     }
 
     /**
