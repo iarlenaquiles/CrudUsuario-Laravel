@@ -6,9 +6,9 @@ use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
 class Usuario extends Eloquent
 {
-	protected $collection = 'usuario_collection';
+	protected $collection = 'usuario';
 
-	protected $fillable = ['nome', 'idade'];
+	protected $fillable = ['nome', 'idade', 'telefone', 'perfil','id_perfil'];
 
 	protected $connection = 'mongodb';
 }
