@@ -4,7 +4,7 @@ namespace App;
 
 use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
-class Usuario extends Eloquent
+class Perfil extends Eloquent
 {
 	protected $collection = 'perfil';
 
